@@ -7,8 +7,8 @@ st.set_page_config(page_title="AI Girlfriend", layout="centered")
 # -----------------------------------------------
 # CONFIG
 # -----------------------------------------------
-genai.configure(api_key="AIzaSyBgmCWbxsZv2UoK6TvGS-6xqKcariYH4eM")
-model = genai.GenerativeModel("gemini-2.0-flash")
+genai.configure(api_key="AIzaSyDGT95JdfZc5WWF1u-spiqQ5xgQaSmKHRY")
+model = genai.GenerativeModel("gemini-2.5-flash")
 
 # -----------------------------------------------
 # SESSION STATE INIT
@@ -130,3 +130,4 @@ if send and user_input.strip() != "":
     st.session_state.messages.append({"role": "assistant", "content": reply})
 
     st.rerun()
+
